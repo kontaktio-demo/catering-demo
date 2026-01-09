@@ -528,6 +528,25 @@
     .kontaktio-launcher::before {
       animation: none !important;
     }
+    /* Wymuszenie pozycji launchera w prawym dolnym rogu */
+.kontaktio-launcher {
+  position: fixed !important;
+  bottom: 28px !important;
+  right: 28px !important;
+  left: auto !important;
+  margin: 0 !important;
+  z-index: 999999 !important;
+}
+
+/* Wymuszenie pozycji widgetu (okna czatu) */
+.kontaktio-widget {
+  position: fixed !important;
+  bottom: 100px !important;
+  right: 28px !important;
+  left: auto !important;
+  margin: 0 !important;
+  z-index: 999999 !important;
+}
   }
 </style>
 
