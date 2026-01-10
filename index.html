@@ -288,21 +288,25 @@
       </div>
     </div>
   </footer>
-  <div class="back-bar" aria-label="Powrót na stronę główną">
-  <a href="https://www.kontaktio.pl/" class="back-bar__link">
-    ← Zainteresowany? Wróć na strone główną.
-  </a>
+<div class="back-bar" aria-label="Powrót na stronę główną">
+  <div class="back-bar__inner">
+    <p class="back-bar__text">
+      Zainteresowany? Wróć na stronę główną i zobacz wszystkie branże.
+    </p>
+    <a href="https://www.kontaktio.pl/" class="back-bar__button">← Wróć na stronę główną</a>
+  </div>
 </div>
-  <script>
+<script>
   window.addEventListener("scroll", () => {
     const bar = document.querySelector(".back-bar");
-    if (window.scrollY > 400) {
+    if (window.scrollY > 500) {
       bar.classList.add("visible");
     } else {
       bar.classList.remove("visible");
     }
   });
 </script>
+
 
 
 
