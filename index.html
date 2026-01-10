@@ -288,6 +288,23 @@
       </div>
     </div>
   </footer>
+  <div class="back-bar" aria-label="Powrót na stronę główną">
+  <a href="/" class="back-bar__link">
+    ← Wróć do wyboru branży
+  </a>
+</div>
+  <script>
+  window.addEventListener("scroll", () => {
+    const bar = document.querySelector(".back-bar");
+    if (window.scrollY > 400) {
+      bar.classList.add("visible");
+    } else {
+      bar.classList.remove("visible");
+    }
+  });
+</script>
+
+
 
   <!-- MOBILE NAV SCRIPT -->
   <script>
