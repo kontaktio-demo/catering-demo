@@ -1135,31 +1135,54 @@ button {
   }
   .back-bar {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  padding: 12px 24px;
-  border-radius: 40px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  font-weight: 600;
-  font-size: 16px;
-  color: #333;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%) translateY(40px);
+  background: linear-gradient(135deg, #ffb6e6, #ffcfe6);
+  border-radius: 20px;
+  padding: 20px 30px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
   z-index: 999;
   opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
+  max-width: 90%;
+  width: 600px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
   pointer-events: none;
 }
 
 .back-bar.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(0);
   pointer-events: auto;
 }
 
-.back-bar__link {
-  text-decoration: none;
-  color: inherit;
+.back-bar__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
+
+.back-bar__text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4a004a;
+  margin: 0;
+}
+
+.back-bar__button {
+  background-color: #fff;
+  color: #ff4fa2;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+}
+
+.back-bar__button:hover {
+  background-color: #ffe6f2;
 }
