@@ -1095,7 +1095,7 @@ button {
   .burger {
     display: block;
   }
-}
+
 
 @media (max-width: 720px) {
   .section {
@@ -1185,4 +1185,5 @@ button {
 
 .back-bar__button:hover {
   background-color: #ffe6f2;
+}
 }
